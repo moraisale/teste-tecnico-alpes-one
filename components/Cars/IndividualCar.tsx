@@ -52,14 +52,14 @@ const IndividualCar: React.FC<ICar> = ({
           height="24px"
           color="#666666"
           cursor="pointer"
-          _hover={{ opacity: 0.5 }}
+          _hover={{ color: "#1C69D4" }}
         />
         <WhatsAppIcon
           width="24px"
           height="24px"
           color="#666666"
           cursor="pointer"
-          _hover={{ opacity: 0.5 }}
+          _hover={{ color: "#25D366" }}
         />
       </div>
     </div>

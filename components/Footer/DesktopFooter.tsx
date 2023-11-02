@@ -34,6 +34,7 @@ const DesktopFooter = () => {
               width={124}
               height={24}
               alt="Logo Alpes One"
+              onClick={() => window.open("https://alpes.one/")}
             />
           </div>
         </div>
