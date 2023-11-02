@@ -1,0 +1,71 @@
+@use '../variables.sass'
+
+.desktop-header
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    background-color: white
+    max-width: 1350px
+    width: 100%
+    z-index: 10
+    @media screen and (min-width: 769px) 
+        padding: 0 16px
+
+.header-container 
+    display: flex
+
+.buttons-container
+    display: flex
+    width: 100%
+    flex-direction: column
+    justify-content: flex-start
+    padding-top: 30px
+
+.contact-buttons
+    display: flex
+    gap: 30px
+    width: 100%
+    padding-bottom: 30px
+
+
+.phone, .virtual-tour
+    display: flex
+    cursor: pointer
+    background-color: #000000
+    align-content: center
+    color: variables.$text-white
+    height: max-content
+    padding: 12px 18px 
+    gap: 6px
+    &:hover
+        background-color: variables.$secondary-button-color-hover
+
+.whatsapp-button
+    cursor: pointer
+    display: flex
+    color: variables.$text-white
+    height: max-content
+    padding: 12px 18px 
+    gap: 6px
+    background-color: variables.$terciary-button-color
+    &:hover
+        background-color: variables.$terciary-button-color-hover
+
+.categories
+    display: flex
+    width: 100%
+    gap: 58px
+    padding-bottom: 30px
+    .category
+        cursor: pointer
+        width: max-content
+        height: max-content
+        &:hover
+            opacity: 0.5
+        .category-text
+            font-size: 14px
+            color: #666666
+p
+    font-size: 14px
+    font-weight: bold
+    color: white

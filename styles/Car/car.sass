@@ -1,0 +1,110 @@
+@use '../variables.sass'
+
+.cars-list
+    display: grid
+    position: relative
+    gap: 30px
+    padding-bottom: 54px
+    max-width: 1350px  
+    justify-items: center
+    left: 50%
+    transform: translateX(-50%)
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+  
+
+.car-container
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    padding: 0 0
+    max-width: 328px
+    width: 100%
+    @media screen and (min-width: 769px) 
+        padding: 0 16px
+
+.car-title
+    text-align: left
+    width: 100%
+    font-weight: 300
+    padding-top: 10px
+    padding-bottom: 20px
+    .car-title-text
+     font-size: 20px
+     color: #262626
+     font-weight: 300
+
+.car-picture
+    &:hover
+        opacity: 0.5
+
+.container-buttons
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    gap: 16px
+
+.quote-button
+    display: flex
+    cursor: pointer
+    background-color: variables.$primary-button-color
+    font-size: 12px
+    font-weight: bold
+    color: white
+    width: 156px
+    height: 35px
+    padding: 10px 0
+    justify-content: center
+    @media screen and (min-width: 769px) 
+        width: 275px
+        height: 45px
+        font-size: 14px
+    &:hover 
+     background-color: variables.$primary-button-color-hover
+ 
+
+.call-button
+    display: flex
+    cursor: pointer
+    background-color: #666666
+    font-size: 12px
+    font-weight: bold
+    color: white
+    width: 156px
+    max-height: 35px
+    padding: 10px 0
+    justify-content: center
+   
+.social-media-buttons
+    display: flex
+    align-items: center
+    gap: 16px
+    width: 100%
+    padding-top: 24px   
+    padding-bottom: 35px
+
+.share
+    font-size: 12px
+    color: #666666
+    font-weight: 300
+    
+
+.facebook, .whatsapp
+    cursor: pointer
+    color: #666666
+    &:hover
+        opacity: 0.5
+
+.choose-your-bmw
+    display: flex
+    width: 100%
+    justify-content: center
+    padding-top: 30px
+    padding-bottom: 30px
+    .choose-bmw-title
+        font-size: 20px
+        font-weight: 300
+        color: #262626
+        @media screen and (min-width: 769px) 
+            font-size: 40px
